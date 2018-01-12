@@ -1,0 +1,11 @@
+<h1> <%= title %></h1>
+<p> <%= content[0].title %> </p>
+<ul>
+    <% for( let item of content ) {
+    if(item.title != 'MongoDB'){
+    %>
+    <li> <%= item.title %> : <%= item.content %></li>
+    <%
+    }
+    } %>
+</ul>
